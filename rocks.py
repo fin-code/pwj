@@ -12,9 +12,6 @@ def lastStoneWeight( stones: List[int]) -> int:
         result = -1
         while len(stones) > 1:
          #   print('current heap', stones)
-            if len(stones) ==  1:
-                break
-            else:
                 y = -heapq.heappop(stones)
                 x = -heapq.heappop(stones)
                 #print(y,x)
