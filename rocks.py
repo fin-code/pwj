@@ -20,7 +20,7 @@ def lastStoneWeight( stones: List[int]) -> int:
                 if y > 0:
                     heapq.heappush(stones,y * -1)
             #print(stones)
-        return stones[0]* -1
+        return 0 if len(stones) == 0 else stones[0]* -1
             
 
 
